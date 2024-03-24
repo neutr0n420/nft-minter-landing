@@ -7,6 +7,7 @@ import Navbar from "@/components/Navbar";
 import Disconnected from "@/components/Disconnected";
 import Connected from "@/components/Connected";
 import { useWallet } from "@solana/wallet-adapter-react";
+import RandomBar from "@/components/RandomBar";
 
 // const inter = Inter({ subsets: ["latin"] });
 
@@ -27,9 +28,8 @@ export default function Home() {
         backgroundPosition="center"
       >
         <Stack w="full" h="calc(100vh)" justify="center">
-          { /* NavBar */}
           <Navbar />
-
+          {/* <RandomBar /> */}
           <Spacer />
           <Center>
             { /* If connected, the second view, otherwise the first */}
